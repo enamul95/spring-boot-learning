@@ -2,6 +2,7 @@ package com.app.serviceImpl;
 
 import com.app.dto.UserValidationExceptionHandlingRequest;
 import com.app.entity.UserValidationExceptionHandlingEntity;
+import com.app.exceptionHandler.CustomerAlreadyExistsException;
 import com.app.exceptionHandler.UserNotFoundException;
 import com.app.repo.UserValidationExceptionHandlingRepo;
 import com.app.service.UserValidationExceptionHandlingService;
@@ -33,6 +34,8 @@ public class UserValidationExceptionHandlingServiceImpl  implements UserValidati
 
         return repo.save(entity);
     }
+
+
 
     @Override
     public List<UserValidationExceptionHandlingEntity> getALlUsers() {
