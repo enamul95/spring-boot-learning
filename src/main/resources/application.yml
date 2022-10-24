@@ -3,7 +3,7 @@ spring:
   application:
     name: spring-boot-learning
   profiles:
-    active: dev
+    active: prod
 
 
 
