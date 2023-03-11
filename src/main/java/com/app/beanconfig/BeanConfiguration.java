@@ -10,4 +10,9 @@ public class BeanConfiguration {
     public TestBean testBean(){
         return new TestBean();
     }
+
+    @Bean
+    public String getName(){
+        return "Enamul";
+    }
 }
